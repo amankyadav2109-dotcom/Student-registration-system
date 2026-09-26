@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="form-container">
+
+            <div class="heading">
+
+                <div class="graduation-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <h1>
+                        Student <span>Registration</span>
+                    </h1>
+
+                    <p>
+                        Fill in the details below to register as a student
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="studentForm">
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon blue">▣</span>
+                        Student ID:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="student_id"
+                        placeholder="Enter your student ID"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon purple">●</span>
+                        Name:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon green">✉</span>
+                        Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon orange">☎</span>
+                        Phone:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon red">📅</span>
+                        Date of Birth:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dob"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon purple">🎓</span>
+                        Course:
+                    </label>
+
+                    <select id="course" required>
+
+                        <option value="">
+                            Select Course
+                        </option>
+
+                        <option value="BCA">
+                            BCA
+                        </option>
+
+                        <option value="BBA">
+                            BBA
+                        </option>
+
+                        <option value="B.Tech">
+                            B.Tech
+                        </option>
+
+                        <option value="M.Tech">
+                            M.Tech
+                        </option>
+
+                        <option value="MCA">
+                            MCA
+                        </option>
+
+                        <option value="MBA">
+                            MBA
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <span class="icon blue">📖</span>
+                        Semester:
+                    </label>
+
+                    <select id="semester" required>
+
+                        <option value="">
+                            Select Semester
+                        </option>
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit">
+
+                    <span>👤+</span>
+
+                    Register
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

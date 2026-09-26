@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="employee-dashboard.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-page">
+
+
+        <!-- Header -->
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <div class="dashboard-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <h1>
+                        Employee Dashboard
+                    </h1>
+
+                    <p>
+                        Manage student registration records
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="logoutButton"
+                class="logout-button"
+            >
+                🚪 Logout
+            </button>
+
+        </header>
+
+
+
+        <!-- Dashboard Content -->
+
+        <main class="dashboard-content">
+
+
+            <!-- Statistics -->
+
+            <section class="stats-container">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Students
+                        </p>
+
+                        <h2 id="totalStudents">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Registered Records
+                        </p>
+
+                        <h2 id="registeredStudents">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- Student Records -->
+
+            <section class="students-section">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Student Records
+                        </h2>
+
+                        <p>
+                            View and manage registered students
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="refreshButton"
+                        class="refresh-button"
+                    >
+                        🔄 Refresh
+                    </button>
+
+                </div>
+
+
+
+                <!-- Search and Sort -->
+
+                <div class="controls">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="🔍 Search by name, email or student ID"
+                    >
+
+
+                    <select id="sortSelect">
+
+                        <option value="default">
+                            Sort By
+                        </option>
+
+                        <option value="student_id">
+                            Student ID
+                        </option>
+
+                        <option value="name">
+                            Name
+                        </option>
+
+                        <option value="course">
+                            Course
+                        </option>
+
+                        <option value="semester">
+                            Semester
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Table -->
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Student ID
+                                </th>
+
+                                <th>
+                                    Name
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+                                    Phone
+                                </th>
+
+                                <th>
+                                    Date of Birth
+                                </th>
+
+                                <th>
+                                    Course
+                                </th>
+
+                                <th>
+                                    Semester
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="studentTableBody">
+
+                            <!-- Student records will appear here -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <p
+                    id="noStudentsMessage"
+                    class="no-students-message"
+                >
+                    No student records found.
+                </p>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="employee-dashboard.js"></script>
+
+</body>
+
+</html>

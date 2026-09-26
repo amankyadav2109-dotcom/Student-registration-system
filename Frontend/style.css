@@ -1,0 +1,374 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+html,
+body
+{
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100%;
+
+    font-family: Arial, sans-serif;
+}
+
+
+body
+{
+    overflow-x: hidden;
+}
+
+
+.home-page
+{
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    padding: 45px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5,
+        #7c3aed
+    );
+
+    overflow: hidden;
+}
+
+
+.home-content
+{
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.system-icon
+{
+    width: 68px;
+
+    height: 68px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    font-size: 38px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.welcome-text
+{
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+.home-content h1
+{
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-size: 46px;
+
+    line-height: 1.15;
+}
+
+
+.home-content h1 span
+{
+    color: #facc15;
+}
+
+
+.intro-text
+{
+    max-width: 700px;
+
+    margin: 0 auto 32px;
+
+    color: #e0e7ff;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+.role-container
+{
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 24px;
+}
+
+
+.role-card
+{
+    flex: 1;
+
+    max-width: 460px;
+
+    min-height: 270px;
+
+    padding: 30px 35px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 22px;
+
+    text-align: left;
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+
+.role-card:hover
+{
+    transform: translateY(-6px);
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+.student-card
+{
+    border-top: 5px solid #2563eb;
+}
+
+
+.employee-card
+{
+    border-top: 5px solid #7c3aed;
+}
+
+
+.card-icon
+{
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 16px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #eef2ff;
+
+    border-radius: 16px;
+
+    font-size: 31px;
+}
+
+
+.role-card h2
+{
+    margin: 0 0 10px;
+
+    color: #1e293b;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+}
+
+
+.role-card p
+{
+    margin: 0 0 22px;
+
+    max-width: 390px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+.student-register-button,
+.employee-login-button
+{
+    display: inline-block;
+
+    padding: 12px 21px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.student-register-button
+{
+    background: #2563eb;
+
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+.employee-login-button
+{
+    background: #7c3aed;
+
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+}
+
+
+.student-register-button:hover,
+.employee-login-button:hover
+{
+    transform: translateY(-2px);
+}
+
+
+.circle
+{
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    pointer-events: none;
+}
+
+
+.circle-one
+{
+    width: 320px;
+
+    height: 320px;
+
+    top: -150px;
+
+    left: -100px;
+}
+
+
+.circle-two
+{
+    width: 430px;
+
+    height: 430px;
+
+    right: -180px;
+
+    bottom: -200px;
+}
+
+
+@media (max-width: 800px)
+{
+    .home-page
+    {
+        padding: 40px 20px;
+    }
+
+
+    .home-content h1
+    {
+        font-size: 38px;
+    }
+
+
+    .role-container
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .role-card
+    {
+        width: 100%;
+
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 500px)
+{
+    .home-content h1
+    {
+        font-size: 31px;
+    }
+
+
+    .intro-text
+    {
+        font-size: 14px;
+    }
+
+
+    .role-card
+    {
+        padding: 27px 25px;
+    }
+}

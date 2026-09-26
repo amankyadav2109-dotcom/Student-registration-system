@@ -1,0 +1,12 @@
+# Compiled files
+*.exe
+*.o
+
+# SQLite database
+*.db
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
